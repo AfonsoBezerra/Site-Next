@@ -13,7 +13,7 @@ export const ButtonStyle = styled.button`
   border-radius: 100px;
   box-shadow: 0 0 10px rgba(var(--pink-rgb), 20%);
   width: fit-content;
-  transition: all .5s;
+  transition: .5s, outline 0s;
   cursor: pointer;
   @media screen and (min-width: 1440px){
       padding: .6rem 3%;  
@@ -45,6 +45,9 @@ export const ButtonStyle = styled.button`
   :hover{
     color: rgb(var(--font-button-color));
     background-color: var(--pink);
+  }
+  :active{
+    outline: 3px solid rgba(var(--pink-rgb), 0.4);
   }
 
 `
